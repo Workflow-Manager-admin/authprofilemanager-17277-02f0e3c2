@@ -101,4 +101,3 @@ def login_view(request):
             profile = {k: v for k, v in user.items() if k != "password"}
             return JsonResponse(profile, status=200)
     return JsonResponse({"error": "Invalid email or password."}, status=401)
-
