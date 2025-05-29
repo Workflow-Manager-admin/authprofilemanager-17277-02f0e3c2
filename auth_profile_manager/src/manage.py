@@ -3,11 +3,14 @@ import os
 import sys
 
 # PUBLIC_INTERFACE
+
+
 def main():
     """Minimal Django manage.py for running the project."""
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
     from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)
+
 
 if __name__ == "__main__":
     main()
