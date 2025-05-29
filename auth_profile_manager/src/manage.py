@@ -2,22 +2,12 @@
 import os
 import sys
 
-
 # PUBLIC_INTERFACE
 def main():
-    """
-    Run administrative tasks for the Django project.
-    """
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
-    try:
-        from django.core.management import execute_from_command_line
-    except ImportError as exc:
-        raise ImportError(
-            "Couldn't import Django. Is it installed and available on your "
-            "PYTHONPATH environment variable?"
-        ) from exc
+    """Minimal Django manage.py for running the project."""
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
+    from django.core.management import execute_from_command_line
     execute_from_command_line(sys.argv)
-
 
 if __name__ == "__main__":
     main()
