@@ -3,6 +3,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.http import JsonResponse
 from .users import USERS
 
+
 # PUBLIC_INTERFACE
 @csrf_exempt
 def login_view(request):
