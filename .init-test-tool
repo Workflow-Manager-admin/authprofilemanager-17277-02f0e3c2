@@ -1,0 +1,4 @@
+{
+    "command": "pytest",
+    "working_directory": "/home/kavia/workspace/code-generation/authprofilemanager-17277-02f0e3c2/auth_profile_manager"
+}
